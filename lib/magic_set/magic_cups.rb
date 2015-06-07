@@ -14,6 +14,7 @@ end
 module MagicSet::MagicCups
 
   def [](ind)
+    @just_shuffled = false
     if @counter == 0
       "ball"
     else
