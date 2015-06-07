@@ -1,41 +1,82 @@
-# MagicSet
-
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/magic_set`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
-
-## Installation
-
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'magic_set'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install magic_set
-
-## Usage
-
-TODO: Write usage instructions here
-
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake rspec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/magic_set.
+$LOAD_PATH
 
 
-## License
+files
 
-The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+Dir.glob("lib/**/*") 
+
+
+
+
+gem build magic_set.gemspec && gem uninstall magic_set && gem install magic_set-0.1.0.gem && irb
+
+
+
+require 'magic_set'
+
+# Set the echo off
+irb_context.echo = false
+
+# A Magician can't do anything without a hat
+class Hat; end
+hat = Hat.new
+
+# The first trick I mastered as a kid was putting cups under balls
+cups = ["","ball",""]
+
+# Give them a shuffle
+
+cups.shuffle!
+
+# Guess a cup
+cups[0]
+cups[1]
+cups[2]
+
+# Try again
+cups.shuffle!
+
+# Guess again
+cups[1]
+cups[2]
+cups[0]
+
+#-----
+
+# Now magicians always putting things in boxes to see what happens
+
+# First we'll need a box to put stuff in
+
+class Box
+  attr_accessor :contents
+  end
+  b = Box.new
+
+  # And then lets put something inside it, perhaps a glass of water
+
+  b.contents = "glass of water"
+
+  # As you can see, there is water in the box
+  puts b.contents
+
+  # wave wand
+  puts b.contents
+
+  # Now lets put something else in the box
+  b.contents = "dove"
+  puts b.contents
+  # wave wand again
+  puts b.contents
+
+  # And it's disappeared
+
+  #-------------
+
+  Another trick that magicians like to do, is sawing a women in half.  I feel that's a bit sexist, so I'll saw a man in half instead.  And what better person to saw in half than Nigel Farage
+
+
+ 
+
+  🍷
+
 
