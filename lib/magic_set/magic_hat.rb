@@ -1,7 +1,7 @@
 class MagicSet::MagicHat
 
   def contents
-    ObjectSpace.each_object(Box).first.contents
+    ObjectSpace.each_object(MagicSet::MagicBox).map(&:contents)
   end
 
 end

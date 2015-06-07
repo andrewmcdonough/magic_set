@@ -19,4 +19,14 @@ describe MagicSet::MagicBox do
     expect(box.contents).to eql "glass of wine"
   end
 
+  it 'makes the next thing disappear' do
+    box = Box.new 
+    box.contents = "glass of water"
+    box.contents
+    box.contents
+    box.contents = "banana"
+    box.contents
+    expect(box.contents).to eql ""
+  end
+
 end

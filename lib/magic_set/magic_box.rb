@@ -12,8 +12,12 @@ class MagicSet::MagicBox
     @look_counter += 1
     if @look_counter == 1 
       @contents
-    else
+    elsif @contents == "glass of water"
+      @look_counter = 0
       "glass of wine"
+    else
+      @look_counter = 0
+      ""
     end
   end
 
