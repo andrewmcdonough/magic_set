@@ -13,7 +13,7 @@ class MagicSet::MagicBox
     if @look_counter == 1 
       @contents
     else
-      ""
+      "glass of wine"
     end
   end
 
