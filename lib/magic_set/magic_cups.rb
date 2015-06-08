@@ -1,6 +1,6 @@
 class Array
 
-  def new_shuffle!   
+  def new_shuffle!
     self.extend MagicSet::MagicCups
     @counter = 2
     old_shuffle!
@@ -14,7 +14,6 @@ end
 module MagicSet::MagicCups
 
   def [](ind)
-    @just_shuffled = false
     if @counter == 0
       "ball"
     else
