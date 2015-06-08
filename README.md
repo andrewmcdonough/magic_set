@@ -29,17 +29,17 @@ cups = ["","ball",""]
 cups.shuffle!
 
 # Guess a cup
-cups[0]
-cups[1]
-cups[2]
+puts cups[0]
+puts cups[1]
+puts cups[2]
 
 # Try again
 cups.shuffle!
 
 # Guess again
-cups[1]
-cups[2]
-cups[0]
+puts cups[1]
+puts cups[2]
+puts cups[0]
 
 #-----
 
@@ -49,30 +49,50 @@ cups[0]
 
 class Box
   attr_accessor :contents
-  end
-  b = Box.new
+end
 
-  # And then lets put something inside it, perhaps a glass of water
+b = Box.new
 
-  b.contents = "glass of water"
+# And then lets put something inside it, perhaps a glass of water
 
-  # As you can see, there is water in the box
-  puts b.contents
+b.contents = "glass of water"
 
-  # wave wand
-  puts b.contents
+# As you can see, there is water in the box
+puts b.contents
 
-  # Now lets put something else in the box
-  b.contents = "dove"
-  puts b.contents
-  # wave wand again
-  puts b.contents
+# wave wand
+puts b.contents
 
-  # And it's disappeared
+# Now lets put something else in the box
+b.contents = "dove"
+puts b.contents
 
-  #-------------
+# wave wand again
+puts b.contents
 
-  Another trick that magicians like to do, is sawing a women in half.  I feel that's a bit sexist, so I'll saw a man in half instead.  Any suggestions for a man anybody would like to saw in half?
+# And it's disappeared
+
+#-------------
+
+# Another trick that magicians like to do, is sawing a women in half.  I feel that's a bit sexist, so I'll saw a man in half instead.  Specifically, Nigel Farage.
+
+# Now I'll represent Nigel as a good old English, beer-drinking String
+
+irb_context.echo = false
+
+man = "Nigel Farage"
+
+# In ruby, it's quite easy to cut things up
+
+man_parts = man.split " "
+puts man_parts
+
+# Now I know some of you would like it if I left Nigel that way, but I should really put him back together before the Daily Mail find out.
+
+new_person = man_parts.join " "
+puts new_person
+
+
 
 
  
