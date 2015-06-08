@@ -72,7 +72,7 @@ class Box
 
   #-------------
 
-  Another trick that magicians like to do, is sawing a women in half.  I feel that's a bit sexist, so I'll saw a man in half instead.  And what better person to saw in half than Nigel Farage
+  Another trick that magicians like to do, is sawing a women in half.  I feel that's a bit sexist, so I'll saw a man in half instead.  Any suggestions for a man anybody would like to saw in half?
 
 
  
